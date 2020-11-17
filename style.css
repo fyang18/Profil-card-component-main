@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    min-height: 100vh;
+    background: right 52vw bottom 37vh no-repeat url("./images/bg-pattern-top.svg"), 
+    50vw 50vh no-repeat url("./images/bg-pattern-bottom.svg");
+    background-color: hsl(185, 75%, 39%);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 98vh;
+}
+
+.innerContainer {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 375px;
+    overflow: hidden;
+    text-align: center;
+    width: 350px;
+}
+
+.top {
+    background-image: url(images/bg-pattern-card.svg);
+    border-bottom: 1px solid #75b5b7;
+    height: 139px;
+    width: 100%;   
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-55px);
+}
+
+.photo img {
+    border: 4px solid #fefffd;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.name {
+    background-color: #ffffff;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+    height: 145px;
+    padding-top: 77px;
+    border-bottom: 1px solid #ddd;  
+}
+
+.name span , .name p {
+    color: hsl(0, 0%, 59%);
+    font-weight: initial;
+}
+
+.name span , .name p {
+    color: hsl(0, 0%, 59%);
+    font-weight: initial;
+}
+
+.name p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.stats {
+    color: hsl(229, 23%, 23%);
+    display: flex;
+    height: 88px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.stats p {
+    color: hsl(0, 0%, 59%);
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+
+.attribution {
+    color: #ffffff;
+    text-align: center;
+}
+
+.attribution a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Mobile and Tablet layout */
+@media only screen and (max-width: 768px){
+    body {        
+        min-height: 100vh;
+        background: right 37vw bottom 58vh no-repeat url("./images/bg-pattern-top.svg"), 44vw 35vh no-repeat url("./images/bg-pattern-bottom.svg");
+        background-color: hsl(185, 75%, 39%);
+        min-height: 100vh;
+    }
+
+    .container {
+        align-items: initial;
+    }
+    .innerContainer {
+        margin: 146px 25px;
+    }
+}
